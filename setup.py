@@ -5,7 +5,7 @@ HYPEN_E = "-e ."
 
 def get_requirements(file_path:str)->list[str]:
     '''this funcation return the requirements of libraries'''
-    requirements = [];
+    requirements = []
     with open(file_path) as fo:
         requirements = fo.readlines()
         requirements = [req.replace("\n","") for req in requirements]
